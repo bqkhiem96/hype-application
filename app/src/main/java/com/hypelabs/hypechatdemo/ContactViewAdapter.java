@@ -25,12 +25,16 @@
 package com.hypelabs.hypechatdemo;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.hypelabs.hype.Hype;
+import com.hypelabs.hype.Message;
 
 import java.util.Map;
 
@@ -95,6 +99,12 @@ public class ContactViewAdapter extends BaseAdapter {
             vi = getInflater().inflate(R.layout.contact_cell_view, null);
 
         Store store = (Store)getItem(position);
+
+        //Log all other devices' identities
+        Log.i("WTF", "instance["+position+"] = " + store.getInstance().getStringIdentifier());
+        String text = "Con chim ku cac";
+        byte[] data = new byte[text.length()];
+        Hype.send(data, store.getInstance());
 
         TextView displayName = (TextView)vi.findViewById(R.id.display_name);
         ImageView contentIndicator = (ImageView)vi.findViewById(R.id.new_content);

@@ -69,7 +69,7 @@ public class ChatApplication extends BaseApplication implements StateObserver, N
 
         // Generate an app identifier in the HypeLabs dashboard (https://hypelabs.io/apps/),
         // by creating a new app. Copy the given identifier here.
-        Hype.setAppIdentifier("{{app_identifier}}");
+        Hype.setAppIdentifier("f0e3f9c5");
 
         Hype.start();
     }
@@ -157,7 +157,8 @@ public class ChatApplication extends BaseApplication implements StateObserver, N
 
     @Override
     public void onHypeMessageReceived(Message message, Instance instance) {
-
+        String receivedMessage = new String(message.getData());
+        Log.i("WTF", "message = " + receivedMessage);
         Log.i(TAG, String.format("Hype got a message from: %s", instance.getStringIdentifier()));
 
         Store store = getStores().get(instance.getStringIdentifier());
@@ -194,7 +195,7 @@ public class ChatApplication extends BaseApplication implements StateObserver, N
     @Override
     public String onHypeRequestAccessToken(int i) {
         // Access the app settings (https://hypelabs.io/apps/) to find an access token to use here.
-        return "{{access_token}}";
+        return "558cc6d448bd5c647fea181813b636";
     }
 
     @Override

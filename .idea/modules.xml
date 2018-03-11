@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hype/Hype.iml" filepath="$PROJECT_DIR$/Hype/Hype.iml" />
+      <module fileurl="file://C:\Users\quockhiem\Documents\IT\colenKhiemoi\HypeChatDemo.android\Hype\Hype.iml" filepath="C:\Users\quockhiem\Documents\IT\colenKhiemoi\HypeChatDemo.android\Hype\Hype.iml" />
       <module fileurl="file://$PROJECT_DIR$/HypeChatDemo.android.iml" filepath="$PROJECT_DIR$/HypeChatDemo.android.iml" />
+      <module fileurl="file://C:\Users\quockhiem\Documents\IT\colenKhiemoi\HypeChatDemo.android\HypeChatDemo.android.iml" filepath="C:\Users\quockhiem\Documents\IT\colenKhiemoi\HypeChatDemo.android\HypeChatDemo.android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\quockhiem\Documents\IT\colenKhiemoi\HypeChatDemo.android\app\app.iml" filepath="C:\Users\quockhiem\Documents\IT\colenKhiemoi\HypeChatDemo.android\app\app.iml" />
     </modules>
   </component>
 </project>

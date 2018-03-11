@@ -54,7 +54,7 @@
 
         <meta-data
             android:name="com.hypelabs.hype.realm"
-            android:value="\ {{app_identifier}}"/>
+            android:value="f0e3f9c5"/>
 
     </application>
 
